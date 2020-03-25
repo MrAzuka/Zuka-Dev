@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script>
+function validateForm() {
+  var x = document.forms["formn"]["firstName"].value;
+  if (typeof (x) !== 'string') {
+    alert("Wrong Input");
+    return;
+  }
+    var y = document.forms["formn"]["telNo"].value;
+  if (typeof (y) !== 'number') {
+    alert("Wrong Input");
+    return;
+  }
+}
+
+</script>
+<style>
+body{
+    background-image: url('img/tenor.gif');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    color: palevioletred;
+}
+
+</style>
+</head>
+<body>
+    <div id='henn'class="container">
+    <h2 class="container display-4 text-center">McDaniel's Review Page</h2>
+    <p class="lead text-center">This is a quick survey on how appealing our services 
+        have been for the last few years and how appealing our site has been.
+        And how we can improve it. Thanks as you respond.
+    </p> 
+</div>
+    <form name ="formn" class="container" onsubmit="return validateForm()" action="">
+        <fieldset>
+<legend><center>Personal Details</center></legend>
+        <div class="form-group">
+            <label for="firstName">First Name:</label>
+            <input type="text" class="form-control" name="firstName" id="firstName" required>
+        </div>
+        <div class="form-group">
+            <label for="lastName">Last Name:</label>
+            <input type="text" class="form-control" name="lastName" id="lastName" required>
+        </div>
+        <div class="form-group">
+            <label for="firstName">Email-Address</label>
+            <input type="email" class="form-control" name="email" id="email" required>
+        </div>
+        <div class="form-group">
+            <label for="telNo">Telephone Number:</label>
+            <input type="tel" class="form-control" name="telNo" id="telNo" required>
+        </div>
+        <div class="form-group">
+                <label for="sel1">Daily Preferences</label>
+                <select class="form-control" id="sel1" required>
+                  <option>$29.00 per meal</option>
+                  <option>$49.00 per meal</option>
+                  <option>$39.00 per meal</option>
+                  <option>$56.00 per meal</option>
+                </select>
+              </div>
+    </fieldset>
+      <fieldset>
+          <legend><center>General Reviews</center></legend>
+          <div class="form-group">
+      <label for="">Who refered you to Us</label>
+       <input type="text" class="form-control" name="how" id="how">
+       </div>
+       <div class="form-group">
+            <label for="">Would you like to refer Us:</label><br/>
+           Yes: <input type="radio"  name="" id=""/><br/>
+           No:  <input type="radio"  name="radio" id="radio"/>
+       </div>
+        <div class="form-group">
+             <label for="">What do you hope to accomplish by visiting our website?</label>
+             <br/><textarea name="accomplish" class="form-control" id="" cols="50" rows="10"></textarea>
+        </div>
+        <div class="form-group">
+        <label for="">Is there anything missing on this page?</label><br/>
+        Yes: <input type="radio"  name="" id="radio"/><br/>
+        No:  <input type="radio"  name="radio" id="radio"/>
+    </div>
+        <div class="form-group">
+                <label for="">How did your experience compare to your expectations?</label>
+                <br/><textarea name="accomplish" id="" class="form-control" cols="50" rows="10"></textarea>
+           </div>
+           <div class="form-group">
+                <label for="">Do you Like our Daily Packages</label><br/>
+                Yes: <input type="radio"  name="" id="radio"/><br/>
+                No:  <input type="radio"  name="radio" id="radio"/>
+            </div>
+            <div class="form-group">
+                    <label for="">What new feature will you like to see in our next dish</label>
+                     <input type="text" class="form-control" name="how" id="how">
+                     </div>
+               <div class="form-group">
+                <label for="">Any Other issues</label>
+                <br/><textarea name="accomplish" id="" class="form-control" cols="50" rows="10"></textarea>
+                </div>
+        </fieldset>
+        <div class="form-group">
+                <div class="">
+                  <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                </div>
+              </div>
+
+           
+
+    </form>
+    <footer class="text-center bg-light">Made By ZukaDev<br/>
+    <a href=" https://zuka-dev.github.io/myassignment/"><img src="img/download.png" alt="" srcset=""></a></footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
